@@ -29,3 +29,12 @@ func loadInputs() []string {
 	//Return inputs
 	return inputs
 }
+
+// calculateSum will take a slice of ints and return the sum of all ints in the slice
+func calculateSum(numbers []int) int {
+	sum := 0
+	for _, number := range numbers {
+		sum += number
+	}
+	return sum
+}
