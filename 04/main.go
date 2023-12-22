@@ -132,7 +132,7 @@ func parseCards(inputs []string) []Card {
 }
 
 // calculateTotalScore takes in a slice of cards and returns the total score
-func calculateTotalScore(cards []Card) int {
+func part1(cards []Card) int {
 	var totalScore int
 	for _, card := range cards {
 		totalScore += card.Score
@@ -177,12 +177,12 @@ func main() {
 	cards := parseCards(inputs)
 
 	//Calculate total score
-	totalScore := calculateTotalScore(cards)
-
-	//Print total score
-	log.Println(totalScore)
+	totalScore := part1(cards)
+	//Print "Part 1: totalScore"
+	log.Println("Part 1:", totalScore)
 
 	//Part 2
 	totalCards := part2(cards)
-	log.Println(totalCards)
+	//Print "Part 2: totalCards"
+	log.Println("Part 2:", totalCards)
 }
