@@ -114,7 +114,6 @@ func checkGames(games []Game) int {
 
 	//Loop through games
 	for _, game := range games {
-		flag := true
 		rMin := 0
 		gMin := 0
 		bMin := 0
@@ -137,10 +136,7 @@ func checkGames(games []Game) int {
 			}
 		}
 
-		//If flag is true, add the product of rMin, gMin and bMin to sum
-		if flag {
-			sum += (rMin * gMin * bMin)
-		}
+		sum += (rMin * gMin * bMin)
 	}
 
 	//Return sum of products
